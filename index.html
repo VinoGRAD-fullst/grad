@@ -20,64 +20,72 @@
         </title>
         <meta name="description" content="Блочная верстка HTML5">
         <style>
-            div {vertical-align: baseline;}
-            * {box-sizing: border-box;}
-            #header h1 {
-                font-size: 24px;
-                text-transform: uppercase;
-                font-weight: bold;
-                padding: 30px 30px 30px 10px;
-                clear: both;
-                text-align: center;
-                text-shadow: 0px 0px 0px #666;
-             }
-             #nav {background-color: rgb(169, 169, 169);
-                border-top: 1px solid #888;
-                border-bottom: 1px solid #888;
-                }
-            #nav ul:after {content: " ";
-                display: table;
-                clear: both;
-                }
-            #nav li {float: left;
-                list-style: none;   
-                }
-            #nav a {display: block;
-                color: black;
-                padding: 10px 25px;
-                text-decoration: none;
-                border-right: 3px solid rgb(255, 250, 205);
-                font-size: xx-large;
-                }
-            #nav li:last-child a {border-right: none; 
-                }
-            #wrapper {
-                min-height: 500px;
-                background-image:<img src="pictures\1662657758_38-klubmama-ru-p-podelka-elektropribori-dlya-malishei-foto-43-3756608115.jpg"; 
-background-size: 100% 100%;  
-            }
-            #sidebar-left {
-                padding: 10px 10px 10px 10px;
-                float: left;
-                width: 25%;}
-            #sidebar-right {
-                padding: 10px 10px 10px 10px;
-                float: right;
-                width: 25%;}
-            #main {
-                padding: 10px 10px 10px 10px;
-                margin-left: 27%;
-                margin-right: 27%;
-                min-height: 500px;
-                background-color: rgba(255, 255, 255, 0.75);
-                /*float: left;*/
-                }
-            #footer {
-                background-color: rgb(220, 220, 220);
-                clear: both;
-                padding: 15px 50px 15px 50px;
-                text-align: center;
-                }
+            html {
+  box-sizing: border-box;
+}
+
+*,
+*::after
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(https://www.m24.ru/b/d/nBkSUhL2h1Aunc61I76BrNOp2Z318Ji-mifGnuWR9mOBdDebBizCnTY8qdJf6ReJ58vU9meMMok3Ee2nhSR6ISeO9G1N_wjJ=-0o6RiixbQ9heK5bt9kFXw.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Monserrat", sans-serif;
+}
+
+.container {
+  max-width: 1190px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 30px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 900;
+  color: #ccebfd;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+}
+
+.menu__list-item {
+  margin-right: 20px;
+}
+
+.menu__list-link {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #ffcbea;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.menu__list-link:hover {
+  color: #64ee4f;
+}
         </style>
     </head>
     <body>
