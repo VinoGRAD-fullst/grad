@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Popins, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background:url(https://masterpiecer-images.s3.yandex.net/18154ca6700511eeb7ea6a0259d7362a:upscaled) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .wrapper {
+            width: 420px;
+            background: transparent;
+            border: 2px solid rgb(223, 81, 38);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgb(rgb(209, 128, 128), green, blue);
+            border-radius: 10px;
+            padding: 30px 40px;
+            color:#fff
+        }
+        .wrapper h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+        .wrapper .input-box {
+            width: 100%;
+            height: 50px;
+            margin: 30px;
+            position: relative;
+        }
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 10px solid rgb(red, green, blue);
+            border-radius: 40px;
+        }
+        .remember a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .remember label input {
+            accent-color: #fff;
+            margin-right: 3px;
+        }
+        .wrapper .remember {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1 color: orange>Login</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Username" required>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="password" repuired>
+        </div>
+        <div class="remember">
+            <label for=""><input type="checkbox">Remember me</label>
+            <a href="#">Forgot password</a>
+        </div>
+
+        <button type="submit" class="bin">Login</button>
+
+        <div class="register-link">
+            <p>Don`t have an account?<a href="#">Register</a></p>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
